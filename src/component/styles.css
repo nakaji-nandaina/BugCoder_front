@@ -1,0 +1,129 @@
+/*メイン設定*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    line-height: 40px;
+    background-color: #111;
+    text-align: center;
+    border-bottom: 3px solid #CCC;
+}
+.logo{
+  padding-top: 15px;
+  height: 60px;
+}
+
+/* h1 {
+  position: relative;
+  text-align: left;
+  color: #eee;
+  margin-left: 10px;
+  padding-top: 5px;
+  margin-bottom: 0;
+}  */
+
+
+header::after {
+    position: absolute;
+    content: " ";
+    border-bottom: solid 3px #ec4747;
+    bottom: -3%;
+    width: 10%;
+    z-index: 1;
+    display: block;
+}
+.logo{
+  display:flex;
+  float:left;
+  margin-left: 70px;
+  margin-top: 0px;
+}
+.flexbox{
+  width: auto;
+  display: flex;
+}
+
+.global-nav{
+  float:right;
+  margin-top: 30px;
+  margin-bottom: 0;
+  display: flex;
+  position: relative;
+}
+.global-nav li{
+  float:left;
+  margin:0 20px;
+  font-size: 20px;
+  list-style:none;
+}
+.global-nav a{
+  margin-bottom: 0;
+  display: block;
+}
+ul.global-nav ul{
+  top:30px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  display: none;
+}
+
+ul.global-nav ul.nav2 li{
+  padding: 5px 0%;
+  margin: 0;
+}
+
+ul.global-nav li:hover ul.nav2{
+   display: block;
+   background-color: #111;
+   margin-top:  0;
+   position: absolute;
+   padding-right: 0;
+   margin-right: 0;
+   z-index: 100;
+}
+
+.downlist{
+  color: #bbb;
+  font-size: 15px;
+  text-decoration: none;
+}
+.downlist:hover{
+  color:#eee;
+  text-decoration: underline 2px;
+}
+.solid1{
+  width: 100%;
+  margin:0;
+  padding: 0%;
+  color: #aaa;
+  border-bottom: solid 2px #fff;
+}
+.content{
+  margin:0 auto;
+  }
+.home{
+  padding-left: 0;
+  position: fixed;
+  width: 60%;
+  background-color: #FFFFFF;
+  z-index: 0;
+}
+.a1{
+  color: #bbb;
+  text-decoration: none;
+}
+.a1:visited{
+  color:#bbb;
+}
+.a1:hover{
+  color:#eee;
+  text-decoration: underline;
+}
+
